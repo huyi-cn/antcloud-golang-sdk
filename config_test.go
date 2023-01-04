@@ -1,4 +1,4 @@
-package sdk
+package quezao
 
 import (
 	"github.com/stretchr/testify/assert"
