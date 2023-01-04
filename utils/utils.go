@@ -19,7 +19,7 @@ var LoadLocationFromTZData func(name string, data []byte) (*time.Location, error
 var TZData []byte = nil
 
 func GetUUIDV4() (uuidHex string) {
-	uuidV4, _ := uuid.NewV4()
+	uuidV4 := uuid.NewV4()
 	uuidHex = hex.EncodeToString(uuidV4.Bytes())
 	return
 }
