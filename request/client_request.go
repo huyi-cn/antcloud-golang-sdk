@@ -1,6 +1,6 @@
 package request
 
-import "../../../antcloud-golang-sdk/sdk/utils"
+import "github.com/huyi-cn/antcloud-golang-sdk/utils"
 
 type ClientRequest struct {
 	Params map[string]string

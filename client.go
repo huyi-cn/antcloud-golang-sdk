@@ -9,11 +9,11 @@ import (
 	"strconv"
 	"strings"
 
-	signer "../../antcloud-golang-sdk/sdk/auth"
-	errors "../../antcloud-golang-sdk/sdk/errors"
-	"../../antcloud-golang-sdk/sdk/request"
-	"../../antcloud-golang-sdk/sdk/response"
-	"../../antcloud-golang-sdk/sdk/utils"
+	signer "github.com/huyi-cn/antcloud-golang-sdk/auth"
+	errors "github.com/huyi-cn/antcloud-golang-sdk/errors"
+	"github.com/huyi-cn/antcloud-golang-sdk/request"
+	"github.com/huyi-cn/antcloud-golang-sdk/response"
+	"github.com/huyi-cn/antcloud-golang-sdk/utils"
 )
 
 // SDK Client

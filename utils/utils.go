@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strconv"
 
-	errors "../../../antcloud-golang-sdk/sdk/errors"
+	errors "github.com/huyi-cn/antcloud-golang-sdk/errors"
 
 	"encoding/hex"
 	"net/url"
@@ -34,9 +34,10 @@ func GetGMTLocation() (*time.Location, error) {
 
 func GetTimeInFormatISO8601() (timeStr string) {
 	gmt, err := GetGMTLocation()
-
+	var errAny any
 	if err != nil {
-		panic(err)
+		errAny = err
+		panic(errAny)
 	}
 	return time.Now().In(gmt).Format("2006-01-02T15:04:05Z")
 }

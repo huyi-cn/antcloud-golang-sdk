@@ -1,6 +1,6 @@
 package response
 
-import "../../../antcloud-golang-sdk/sdk/utils"
+import "github.com/huyi-cn/antcloud-golang-sdk/utils"
 
 type AntCloudResponse interface {
 	GetResultMsg() string

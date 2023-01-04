@@ -6,7 +6,7 @@ import (
 	"encoding/base64"
 	"strings"
 
-	"../../../antcloud-golang-sdk/sdk/utils"
+	"github.com/huyi-cn/antcloud-golang-sdk/utils"
 )
 
 // 签名
